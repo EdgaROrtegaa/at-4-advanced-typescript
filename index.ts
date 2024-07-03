@@ -1,6 +1,12 @@
 // src/index.ts
 import express, { Request, Response } from 'express';
 import { Todo } from './types';
+// src/types/index.ts
+export interface Todo {
+  id: number;
+  text: string;
+  completed: boolean;
+}
 
 const app = express();
 const port = process.env.PORT || 3000;
